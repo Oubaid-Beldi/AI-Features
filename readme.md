@@ -1,4 +1,4 @@
-# Student 2 Fuel Monitoring Microservice
+# Fuel Monitoring Microservice
 
 An AI-powered microservice for monitoring fuel station stock, alerts, and trends using Gemini + FastAPI.
 
