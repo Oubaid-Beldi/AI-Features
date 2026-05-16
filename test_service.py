@@ -102,7 +102,7 @@ def test_chat_multi_turn() -> bool:
 
 
 if __name__ == "__main__":
-    print("Student 2 Microservice — Integration Tests")
+    print(" Microservice — Integration Tests")
     print(f"Target: {BASE}")
 
     results = []

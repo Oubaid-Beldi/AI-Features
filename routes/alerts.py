@@ -6,7 +6,7 @@ GET /alerts — Returns alerts enriched with LLM plain-English explanations.
 This route mirrors the main project's /alerts endpoint but adds two new fields
 per alert: `explanation` and `recommended_action`.
 
-The Angular AlertService (Student 4) needs NO changes — it just starts
+The Angular AlertService  needs NO changes — it just starts
 rendering the new fields when they appear in the response.
 
 Query parameters

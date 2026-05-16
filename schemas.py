@@ -1,9 +1,9 @@
 """
 schemas.py
 ----------
-All request/response Pydantic models for Student 2's microservice.
+All request/response Pydantic models for  microservice.
 
-API contract agreed with Student 4 (Angular frontend):
+API contract agreed with (Angular frontend):
 
 POST /chat
   Request:  ChatRequest
@@ -69,7 +69,7 @@ class AlertResponse(BaseModel):
     """
     Alert record enriched with an LLM-generated explanation.
 
-    The `explanation` field is NEW — Student 4 just starts rendering it.
+    The `explanation` field is NEW —  just starts rendering it.
     All other fields mirror the main project's AlertResponse schema so
     the Angular AlertService needs zero changes to its existing parsing.
     """

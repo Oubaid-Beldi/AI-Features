@@ -1,7 +1,7 @@
 """
 main.py
 -------
-Student 2 microservice entry point.
+AI Features microservice entry point.
 
 Runs independently on port 8001.
 Does NOT import anything from the main pfa/backend/ project.
@@ -44,7 +44,7 @@ except ValueError as exc:
 # App
 # ---------------------------------------------------------------------------
 app = FastAPI(
-    title="Student 2 AI Features Microservice",
+    title=" AI Features Microservice",
     description=(
         "Conversational Q&A agent and LLM-enriched alerts for the AGIL fuel "
         "station monitoring system. Runs standalone on port 8001."
@@ -74,7 +74,7 @@ app.include_router(alerts.router)
 def health() -> dict:
     return {
         "status": "ok",
-        "service": "student2_ai_features",
+        "service": "ai_features",
         "backend_mode": settings.BACKEND_MODE,
         "gemini_model": settings.GEMINI_MODEL,
     }
@@ -86,7 +86,7 @@ def health() -> dict:
 if __name__ == "__main__":
     import uvicorn
     logger.info(
-        "Starting Student 2 microservice on port %d (mode=%s)",
+        "Starting AI Features microservice on port %d (mode=%s)",
         settings.SERVICE_PORT,
         settings.BACKEND_MODE,
     )
